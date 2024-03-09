@@ -15,10 +15,7 @@ print((A_mat @ B_mat)) # 3x3 @ 3x2 ====> OK
 for i in range(len(A_mat)):
     for j in range(len(B_mat[0])):
         for k in range(len(B_mat)):
-            print("A:") 
-            print(A_mat[i][k]) 
-            print(" x B:") 
-            print(B_mat[k][j])
+            print("A(",i,k,")",A_mat[i][k], " x B(",k,j,")", B_mat[k][j],"=", A_mat[i][k] * B_mat[k][j]) #in python, concatenate with ","
             C_mat[i][j] += A_mat[i][k] * B_mat[k][j]
     
 print(C_mat)
