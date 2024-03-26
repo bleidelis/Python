@@ -1,3 +1,6 @@
+# to-do
+# compare computational efficiency of vanilla python vs numpy @ notation function when multiplying laaaarge scale matrices. 
+
 import numpy as np
 
 A_mat = np.array([[10, 20, 30], [100, 200, 300], [1, 2, 3]]) # 3 x 3
