@@ -97,79 +97,114 @@ def TriForce():
   t.forward(150)
   t.screen.bgcolor("#494b4b")
   t.end_fill()
-
 def SolarSystem():
   t.screen.bgcolor("#494b4b")
-  t.speed(10)
+  t.speed(8)
+  
+
   #Sun - (radius = 696,000 km - 10900%) | #F23D00
   # t.color("#F23D00")
-  # t.begin_fill()
-  # t.circle(1090)
-  # t.end_fill()
-
-
   #go to the left side
   t.left(180)
   t.penup()
-  t.forward(550)
+  t.forward(375)
   t.left(180)
-  #Mercury - (radius = 2,440 km / 1,516 miles) – 38% | #A8A8A8
+
+  #1 Mercury - (radius = 2,440 km / 1,516 miles) – 38% | #A8A8A8
   t.pendown()
   t.color("#A8A8A8")
   t.begin_fill()
-  t.circle(38)
+  t.circle(4)
   t.end_fill()
-
   t.penup()
-  t.forward(150)
-  t.pendown()
+  
 
-  #Venus - (6,052 km / 3,761 miles) – 95% | #E9BB5D
+  #2 Venus - (6,052 km / 3,761 miles) – 95% | #E9BB5D
+  t.right(15)
+  t.forward(20)
+  t.pendown()
   t.color("#E9BB5D")
+  t.begin_fill()
+  t.circle(10)
+  t.end_fill()
+  t.penup()
+  
+
+  #3 Earth - (6,371 km / 3,959 miles) | #426F2F
+  t.left(15)
+  t.forward(30)
+  t.pendown()
+  t.color("#426F2F")
+  t.begin_fill()
+  t.circle(10)
+  t.end_fill()
+  t.penup()
+  
+
+  #4 Mars - (3,390 km / 2,460 miles) – 53% | #C1440F
+  t.left(10)
+  t.forward(25)
+  t.pendown()
+  t.color("#C1440F")
+  t.begin_fill()
+  t.circle(5)
+  t.end_fill()
+  t.penup()
+  
+
+  #5 Jupiter - (69,911 km / 43,441 miles) – 1,120% | #AA724D
+  t.right(60)
+  t.forward(80)
+  t.pendown()
+  t.color("#AA724D")
+  t.begin_fill()
+  t.circle(112)
+  t.end_fill()
+  t.penup()
+  
+
+  #6 Saturn - (58,232 km / 36,184 miles) – 945% | #E9CF80
+  t.left(45)
+  t.forward(300)
+  t.pendown()
+  t.color("#E9CF80")
   t.begin_fill()
   t.circle(95)
   t.end_fill()
-
   t.penup()
   
-  t.forward(150)
-  t.pendown()
 
-  #Earth - (6,371 km / 3,959 miles) | #426F2F
-  t.color("#426F2F")
+  #7 Uranus - (25,362 km / 15,759 miles) – 400% | #C9ECF0
+  t.left(22)
+  t.forward(190)
+  t.pendown()
+  t.color("#C9ECF0")
   t.begin_fill()
-  t.circle(100)
+  t.circle(40)
   t.end_fill()
-
   t.penup()
-  t.forward(150)
+
+  #8 Neptune - (24,622 km / 15,299 miles) – 388% | #4474F3
+  t.right(17)
+  t.forward(90)
   t.pendown()
-  #Mars - (3,390 km / 2,460 miles) – 53% | #C1440F
-  t.color("#C1440F")
+  t.color("#4474F3")
   t.begin_fill()
-  t.circle(53)
+  t.circle(39)
   t.end_fill()
-
   t.penup()
-  t.forward(150)
-  t.pendown()
+  
 
-  #Jupiter - (69,911 km / 43,441 miles) – 1,120% | #ECCCAE
-  t.color("#ECCCAE")
+  #9 Pluto - (1,188.3 km) - 19% | #A78670
+  t.left(15)
+  t.forward(120)
+  t.pendown()
+  t.color("#A78670")
   t.begin_fill()
-  t.circle(1120)
+  t.circle(2)
   t.end_fill()
-
   t.penup()
-  t.forward(150)
-  t.pendown()
-  #Saturn - (58,232 km / 36,184 miles) – 945% | #ECCCAE
-
-  #Uranus - (25,362 km / 15,759 miles) – 400% | #C9ECF0
-
-  #Neptune - (24,622 km / 15,299 miles) – 388% | #4474F3
-
-  #Pluto - (1,188.3 km) - 19% | #A78670
+  t.forward(999)
 
 SolarSystem()
 turtle.done()
